@@ -2,6 +2,10 @@ main:
   lang_sample: India Hindi
   language_flag: IND
   language_name: Hindi
+  language_description: >
+    Hindi is an Indo-Aryan language spoken chiefly in northern and central India.
+    It is one of the official languages of India and is written in the Devanagari script.
+    Hindi is widely used in government, media, education, and day-to-day communication across the country.
 strings:
 commonstrings.admin_cache.cache_reloaded: प्रशासक कैश सफलतापूर्वक रीलोड कर दिया गया।
 commonstrings.admin_cache.not_found: 
