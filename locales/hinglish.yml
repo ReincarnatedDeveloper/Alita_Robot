@@ -1,0 +1,441 @@
+main:
+  lang_sample: India Hinglish
+  language_flag: IND
+  language_name: Hinglish
+strings:
+commonstrings.admin_cache.cache_reloaded: Admin cache successfully reload ho gaya.
+commonstrings.admin_cache.not_found: 
+  Admin cache nahi mila. Admin se bolo ki /admincache use kare 
+  taki admin cache reload ho jaye.
+
+admin.adminlist: "Admins in <b>%s</b>:"
+admin.anon_admin.enabled: "AnonAdmin mode abhi <b>enabled</b> hai %s ke liye.
+
+Iska matlab sab anonymous admins bina kisi restriction ke admin actions kar sakte hain."
+admin.anon_admin.disabled: "AnonAdmin mode abhi <b>disabled</b> hai %s ke liye.
+
+Ab anonymous admins ko permission confirm karne ke liye button dabana padega."
+admin.anon_admin.enabled_now: "AnonAdmin mode ab <b>enabled</b> ho gaya %s ke liye.
+
+Ab se, main admins se anonymous admin permissions verify karne ko bolunga."
+admin.anon_admin.disabled_now: "AnonAdmin mode ab <b>disabled</b> ho gaya %s ke liye.
+
+Ab se, main admins se anonymous admin permissions verify nahi karunga."
+admin.demote.is_owner: Ye banda ne hi ye chat banaya hai, main isko kaise demote karun?
+admin.demote.is_admin: Ye banda admin hi nahi hai, main isko kaise demote karun?
+admin.demote.is_bot_itself: Main khud ko demote nahi karunga.
+admin.demote.success_demote: %s ko successfully demote kar diya!
+
+admin.promote.admin_title_truncated: Admin title ko 16 characters tak truncate kiya gaya (pehle %d tha)
+admin.promote.is_bot_itself: Kaash main khud ko promote kar pata ;_;
+admin.promote.is_owner: Ye banda ne hi ye chat banaya hai, main isko promote kaise karun?
+admin.promote.is_admin: Ye banda already admin hai, main isko aur promote kaise karun?
+admin.promote.success_promote: %s ko successfully promote kar diya!
+
+admin.title.success_set: %s ka admin title successfully set ho gaya: <b>%s</b>
+admin.title.is_bot_itself: Kaash main khud ka title change kar pata ;_;
+admin.title.is_owner: Ye banda ne hi chat banaya hai, uska admin title main set nahi kar sakta.
+admin.title.is_admin: Ye banda already admin hai, main iska custom admin title set nahi kar sakta.
+
+admin.errors.err_set_title: Custom admin title set karne me fail ho gaya; Shayad title galat hai ya usme emojis hain.
+admin.errors.err_cannot_demote: Demote karne me fail; Shayad main admin nahi hoon, ya isko kisi aur admin ne promote kiya hai.
+admin.errors.err_cannot_promote: Promote karne me fail; Shayad main admin nahi hoon, ya isko kisi aur admin ne promote kiya hai.
+admin.errors.title_empty: Admin title set karne ke liye ek title dena padega.
+admin.help_msg: |
+  Users ko promote aur demote karna easy hai admin module ke through!
+
+  *User Commands:*
+  × /adminlist: Current chat me sabhi admins ki list.
+
+  *Admin Commands:*
+  × /promote `<reply/username/mention/userid>`: Ek user ko promote karo.
+  × /demote `<reply/username/mention/userid>`: Ek user ko demote karo.
+  × /title `<reply/username/mention/userid>` `<custom title>`: User ke liye custom admin title set karo.
+antiflood.checkflood.perform_action: Haan, mujhe tumhara flooding pasand nahi aaya. %s ko %s kar diya gaya hai!
+antiflood.setflood.success: Flood limit <b>%d</b> messages pe set ho gayi hai.
+antiflood.setflood.disabled: Theek hai. Main flooding ke liye users ko warn nahi karunga.
+antiflood.flood.disabled: Ye chat abhi flood control enforce nahi kar raha hai.
+antiflood.flood.show_settings: Ye chat flood control enforce karega %d messages ke baad. Usse zyada messages bhejne wale users ko %s kiya jayega.
+antiflood.setfloodmode.success: Flood mode %s pe set ho gaya hai.
+antiflood.setfloodmode.unknown_type: "Unknown type '%s'. Kripya inme se ek use karo: ban/kick/mute"
+antiflood.setfloodmode.specify_action: "Flooding par action specify karna hoga. Options: `ban`/`kick`/`mute`"
+antiflood.flood_deleter.enabled: Antiflood Message Deleting ON ho gaya. Flood cause karne wale messages delete honge!
+antiflood.flood_deleter.disabled: Antiflood Message Deleting OFF ho gaya. Flood cause karne wale messages ignore honge!
+antiflood.errors.expected_args: "Arguments chahiye! Ya to off, ya ek number. Example: `/setflood 5`, ya `/setflood off`"
+antiflood.errors.invalid_int: Ye valid number nahi hai. Sahi integer do, ya `off` likho.
+antiflood.errors.set_in_limit: Antiflood limit 3 se 100 ke beech honi chahiye.
+antiflood.help_msg: |
+  Kabhi-kabhi log group join karke 100 messages bhej dete hain aur chat kharab kar dete hain?
+  Antiflood se aisa nahi hoga!
+
+  Antiflood un users par action leta hai jo ek ke baad ek x se zyada messages bhejte hain.
+  Actions ho sakte hain: ban/kick/mute
+
+  *Admin Commands:*
+  × /flood: Current antiflood settings dekho.
+  × /setflood `<number/off/no>`: Kitne messages ke baad action lena hai set karo. `0`, `off`, ya `no` likhne se disable ho jayega.
+  × /setfloodmode `<action type>`: Flood karne wale users par kya action lena hai (ban/kick/mute).
+  × /delflood `<yes/no/on/off>`: Bot flood karne wale messages delete kare ya nahi.
+approvals.approve.is_bot_itself: Tumne mujhe already approve kar diya hai kyunki main admin hoon!
+approvals.approve.user_approved: |
+  %s ko successfully approve kar diya!
+
+  Ab se unhe auto-bans, blacklists, locks aur antiflood se ignore kiya jayega.
+approvals.approve.user_not_in_chat: Ye user is chat me nahi hai, main ise approve kaise karun?
+approvals.unapprove.is_bot_itself: Main admin hoon, mujhe unapprove nahi kiya ja sakta!
+approvals.unapprove.user_unapproved: |
+  Unapproved User: %s
+
+  Ab se ye user auto-bans, blacklists, locks aur antiflood ke liye notice kiya jayega.
+approvals.approval.is_admin: "%s ek admin hai, use approval ki zarurat nahi."
+approvals.approval.is_bot_itself: Main admin hoon, mujhe approval ki zarurat nahi.
+approvals.approval.is_approved: |
+  %s ek approved user hai <b>%s</b> me.
+
+  Auto-bans, blacklists, locks aur antiflood se ignore kiya gaya hai.
+
+  <b>Approved By:</b> %s (<code>%d</code>)
+  <b>Approved Time:</b> %s UTC
+approvals.approval.is_unapproved: |
+  Tum approved nahi ho <b>%s</b> me.
+
+  Tum auto-bans, blacklists, locks aur antiflood ke liye notice kiye jaoge.
+approvals.approved.none_approved: Koi approved users nahi hain <b>%s</b> me!
+approvals.approved.approved_list: |
+  Ye users approved hain <b>%s</b> me:
+
+  %s
+
+  Har user ki detail (Approved By aur Approved Time) dekhne ke liye /approval (user id) use karo.
+approvals.unapprove_all.ask: Kya tum sure ho ki tum sab approved users ko is chat se remove karna chahte ho?
+approvals.unapprove_all.chat_creator_only: Sirf chat creator hi sab users ko disapprove kar sakta hai.
+approvals.unapprove_all.button_handler.true: Sab approved users is chat se hata diye gaye ✅
+approvals.unapprove_all.button_handler.false: Sab approved users ko hatana cancel kar diya gaya ❌
+bans.kick.user_not_in_chat: Ye user is chat me nahi hai, main isko restrict kaise karun?
+bans.kick.cannot_kick_admin: Main ek admin ko kick kyu karunga? Ye bahut bekar idea hai.
+bans.kick.is_bot_itself: Main khud ko kick nahi karunga.
+bans.kick.kicked_user: %s ko successfully kick kar diya gaya.
+bans.kick.kicked_reason: |
+  <b>Reason:</b> %s
+bans.kickme.is_admin: Tum admin ho aur sabke sath yahin stuck rahoge!
+bans.kickme.ok_out: Tumhari marzi, jao!
+bans.ban.is_admin: Main ek admin ko ban kyu karunga? Ye bahut bekar idea hai.
+bans.ban.is_bot_itself: Kya tum sach me sochte ho ki main khud ko ban karunga?
+bans.ban.ban_reason: |
+  <b>Reason:</b> %s
+bans.ban.tban: %s ko %s ke liye ban kar diya gaya.
+bans.ban.normal_ban: |
+  Ek aur hata diya gaya...!
+
+  %s ko ban kar diya gaya.
+bans.ban.dban.no_reply: User ko ban karne aur uska message delete karne ke liye reply karna zaruri hai!
+bans.unban.is_admin: Main ek admin ko unban kyu karunga?
+bans.unban.is_bot_itself: Main khud ko unrestrict nahi karunga, main already yahin hoon!
+bans.unban.unbanned_user: |
+  Chalo ise ek aur chance dete hain.
+
+  %s ko unban kar diya gaya!
+bans.help_msg: |
+  Kabhi users irritating ho jate hain aur unhe chat se remove karna padta hai,
+  ye module exactly usi ke liye hai!
+
+  Users ko ban/kick kar sakte ho, aur agar wo sahi behave karen to unban bhi kar sakte ho.
+
+  *User Commands:*
+  × /kickme: Command use karne wale user ko kick karta hai.
+
+  *Ban Commands* (sirf Admin ke liye):
+  × /ban <userhandle>: User ko ban karta hai. (handle ya reply se)
+  × /sban <userhandle>: User ko silently ban karta hai, group me message nahi bhejta aur command delete kar deta hai.
+  × /dban <userhandle>: User ko ban karta hai aur replied message delete karta hai.
+  × /tban <userhandle> x(m/h/d): User ko x time ke liye ban karta hai (m=minutes, h=hours, d=days).
+  × /unban <userhandle>: User ko unban karta hai.
+
+  *Restrict Commands* (sirf Admin ke liye):
+  × /restrict: Kick, ban aur mute me se choose karne ke liye inline options deta hai.
+  × /unrestrict: Unmute aur unban ke options deta hai.
+blacklists.blacklist.give_bl_word: Blacklist me add karne ke liye ek word do please!
+blacklists.blacklist.already_blacklisted: "Ye words already blacklist me hain:"
+blacklists.blacklist.added_bl: "Ye words blacklist me add ho gaye hain:"
+blacklists.unblacklist.give_bl_word: Blacklist se remove karne ke liye ek word do please!
+blacklists.unblacklist.no_removed_bl: Diye gaye words blacklist me nahi mile, isliye remove nahi kiye gaye.
+blacklists.unblacklist.removed_bl: "%s ko blacklist se successfully remove kar diya!"
+blacklists.ls_bl.no_blacklisted: Is chat me koi blacklisted words nahi hain.
+blacklists.ls_bl.list_bl: "Ye words is chat me blacklisted hain:"
+blacklists.set_bl_action.current_mode: "Is chat ka current blacklist mode hai: %s"
+blacklists.set_bl_action.changed_mode: "Blacklist mode successfully change ho gaya: *%s*"
+blacklists.set_bl_action.choose_correct_option: Kripya in options me se ek select karo: <mute/kick/ban/warn/none>
+blacklists.rm_all_bl.ask: Kya tum sure ho ki tum sabhi blacklisted words ko is chat se remove karna chahte ho?
+blacklists.rm_all_bl.button_handler.true: Sabhi blacklisted words chat se hata diye gaye ✅
+blacklists.rm_all_bl.button_handler.false: Blacklisted words hatane ka action cancel kar diya gaya ❌
+blacklists.bl_watcher.muted_user: %s ko mute kiya gaya blacklisted word %s ki wajah se.
+blacklists.bl_watcher.banned_user: %s ko ban kiya gaya blacklisted word %s ki wajah se.
+blacklists.bl_watcher.kicked_user: %s ko kick kiya gaya blacklisted word %s ki wajah se.
+blacklists.help_msg: |
+  *User Commands:*
+  × /blacklists: Chat me sab blacklisted words dekho.
+
+  *Admin Commands:*
+  × /addblacklist `<trigger>`: Current chat me word blacklist karo.
+  × /rmblacklist `<trigger>`: Current chat se blacklisted word remove karo.
+  × /blaction `<mute/kick/ban/warn/none>`: Blacklisted word detect hone par bot kya action le.
+  × /blacklistaction: Same as above.
+
+  *Owner Only:*
+  × /remallbl: Chat se sab blacklisted words remove karta hai.
+
+  *Note:*
+  Default blacklist mode *none* hota hai, jo sirf message delete karta hai.
+connections.connected: Tum abhi <b>%s</b> se connected ho!
+connections.not_connected: Tum kisi chat se connected nahi ho.
+connections.allow_connect.turned_on: |
+  User connections ko <b>on</b> kar diya gaya is chat me!
+
+  Ab users is chat ko apne PMs se connect kar sakte hain.
+connections.allow_connect.turned_off: |
+  User connections ko <b>off</b> kar diya gaya is chat me!
+
+  Ab users is chat ko apne PMs se connect nahi kar sakte.
+connections.allow_connect.currently_on: |
+  User connections abhi <b>on</b> hain.
+
+  Users is chat ko apne PMs se connect kar sakte hain.
+connections.allow_connect.currently_off: |
+  User connections abhi <b>off</b> hain.
+
+  Users is chat ko apne PMs se connect nahi kar sakte.
+connections.connect.connection_disabled: |
+  User connections abhi <b>disabled</b> hain is chat me.
+
+  Agar connect karna chahte ho to admin se request karo!
+connections.connect.connected: Tum ab <b>%s</b> se connect ho gaye ho!
+connections.connect.tap_btn_connect: Neeche button dabao is chat ko apne PM me connect karne ke liye.
+connections.connections_btns.admin_conn_cmds: Available Admin commands: %s
+connections.connections_btns.user_conn_cmds: Available User commands: %s
+connections.disconnect.disconnected: Tum connected chat se successfully disconnect ho gaye.
+connections.disconnect.need_pm: Tumhe ye command PM me bhejni hogi chat se disconnect karne ke liye!
+connections.is_user_connected.need_group: Ye command group chats ke liye hai, PM me nahi!
+connections.is_user_connected.bot_not_admin: Main is chat me admin nahi hoon!
+connections.is_user_connected.user_not_admin: Ye action karne ke liye tumhe admin hona zaruri hai.
+connections.reconnect.reconnected: Tum ab <b>%s</b> se dobara connect ho gaye ho!
+connections.reconnect.no_last_chat: Tumhare paas reconnect karne ke liye koi last chat nahi hai!
+connections.reconnect.need_pm: Tumhe mere sath PM me hona chahiye reconnect karne ke liye.
+connections.help_msg: |
+  *Connections Module* tumhe allow karta hai kisi chat me remote actions perform karne ke liye bina us chat me directly message bheje!
+
+  *User Commands:*
+  × /connect: Current chat ko tumhare PM se connect karta hai.
+  × /disconnect: Connected chat se disconnect karta hai.
+  × /reconnect: Last connected chat se dobara connect karta hai.
+  × /allowconnect `<yes/no/on/off>`: Allow ya disallow karta hai users ko is chat me connect hone se.
+
+  *Admin Commands:*
+  × Tum remotely almost sab admin commands use kar sakte ho jab tum connected ho.
+disabling.disabled_cmds.none_disabled: Is chat me koi disabled commands nahi hain.
+disabling.disabled_cmds.list_disabled: Ye commands is chat me disabled hain:
+disabling.disable_cmd.already_disabled: Ye command already disabled hai is chat me.
+disabling.disable_cmd.not_exist: Ye command exist nahi karti.
+disabling.disable_cmd.success: %s ko is chat me disable kar diya gaya.
+disabling.enable_cmd.not_disabled: Ye command disabled nahi hai.
+disabling.enable_cmd.success: %s ko is chat me enable kar diya gaya.
+disabling.enable_module.success: "%s module ko enable kar diya gaya."
+disabling.disable_module.success: "%s module ko disable kar diya gaya."
+disabling.help_msg: |
+  *Disabling Module* tumhe kisi specific command ya module ko chat me temporarily disable karne deta hai.
+
+  *Admin Commands:*
+  × /disable `<command>`: Specific command disable karo.
+  × /enable `<command>`: Disabled command ko enable karo.
+  × /disablemodule `<module name>`: Pura module disable karo.
+  × /enablemodule `<module name>`: Disabled module ko enable karo.
+  × /disabled: Dekho kaunse commands disable hain.
+feds.create.success: Federation <b>%s</b> successfully create ho gayi!
+feds.create.already_owner: Tum already ek federation ke owner ho.
+feds.create.need_name: Federation banane ke liye ek naam do.
+feds.delete.success: Tumhari federation successfully delete ho gayi.
+feds.delete.confirm: Kya tum sure ho ki tum federation <b>%s</b> delete karna chahte ho? Ye action irreversible hai!
+feds.delete.cancelled: Federation delete karna cancel ho gaya.
+feds.info.header: "Federation Info:\n<b>%s</b>"
+feds.info.owner: "<b>Owner:</b> %s"
+feds.info.id: "<b>Fed ID:</b> <code>%s</code>"
+feds.info.chats: "<b>Chats:</b> %d"
+feds.info.banned: "<b>Banned Users:</b> %d"
+feds.info.admins: "<b>Admins:</b> %d"
+feds.promote.already_admin: %s already federation admin hai.
+feds.promote.success: %s ko federation admin promote kar diya gaya.
+feds.demote.not_admin: %s federation admin nahi hai.
+feds.demote.success: %s ko federation admin se demote kar diya gaya.
+feds.join.success: Chat <b>%s</b> federation me join ho gaya.
+feds.join.already_joined: Ye chat already federation me join hai.
+feds.leave.success: Chat <b>%s</b> federation se leave ho gaya.
+feds.leave.not_in_fed: Ye chat kisi federation me nahi hai.
+feds.ban.user_already_banned: Ye user already federation me banned hai.
+feds.ban.success: %s federation se banned ho gaya.
+feds.unban.user_not_banned: Ye user federation me banned nahi hai.
+feds.unban.success: %s federation se unbanned ho gaya.
+feds.broadcast.sending: Federation me sab chats ko message bhej raha hoon... Thoda wait karo!
+feds.broadcast.success: "%d chats ko federation me message successfully broadcast kar diya gaya."
+feds.broadcast.failed: "%d chats ko message nahi bhej paya."
+
+feds.list.banned_users: |
+  Federation me banned users ki list:
+  %s
+
+feds.list.no_banned_users: Federation me koi banned users nahi hain.
+
+feds.help_msg: |
+  *Federation Module* tumhe multiple groups ko ek federation me manage karne deta hai aur unme rules enforce karne me help karta hai.
+
+  *Owner Commands:*
+  × /newfed `<fed name>`: Nayi federation banata hai.
+  × /delfed `<fed id>`: Federation delete karta hai.
+  × /fpromote `<user>`: Federation admin banata hai.
+  × /fdemote `<user>`: Federation admin demote karta hai.
+  × /fban `<user>`: User ko federation ke sabhi chats se ban karta hai.
+  × /unfban `<user>`: User ko federation me unban karta hai.
+  × /finfo: Federation ki info dikhata hai.
+  × /fbanlist: Federation ke banned users ki list.
+  × /fbroadcast `<message>`: Federation ke sabhi chats me message broadcast karta hai.
+
+  *Admin Commands:*
+  × /joinfed `<fed id>`: Current chat ko federation me join karta hai.
+  × /leavefed: Current chat ko federation se leave karata hai.
+fun.truth.ask: Chalo Truth or Dare kheltay hain! Tumhara Truth question hai: %s
+fun.dare.ask: Tumhara Dare hai: %s
+fun.meme.random: Random meme aa raha hai... enjoy karo!
+fun.quote.daily: Aaj ka motivational quote: "%s"
+fun.joke.random: Random joke suno: %s
+fun.greetings.hello: Hello %s! Kaise ho?
+fun.greetings.good_morning: Good Morning %s! Have a great day.
+fun.greetings.good_night: Good Night %s! Sweet dreams.
+locks.lock.locked: "%s ko lock kar diya gaya is chat me."
+locks.lock.already_locked: "%s already locked hai is chat me."
+locks.unlock.unlocked: "%s ko unlock kar diya gaya is chat me."
+locks.unlock.not_locked: "%s locked nahi tha is chat me."
+locks.unlockall.success: Sabhi locks is chat me unlock kar diye gaye.
+locks.locktypes.available: Available lock types: %s
+locks.locktypes.no_types: Koi lock types available nahi hain.
+
+locks.help_msg: |
+  *Locks Module* tumhe chat me specific cheeze lock/unlock karne deta hai (stickers, gifs, etc.)
+
+  *Admin Commands:*
+  × /lock `<type>`: Specific cheez lock karta hai.
+  × /unlock `<type>`: Specific cheez unlock karta hai.
+  × /locks: Current locks ki list dikhata hai.
+  × /unlockall: Sabhi cheeze unlock karta hai.
+misc.notes.saved: Note successfully save ho gaya.
+misc.notes.updated: Note update ho gaya.
+misc.notes.deleted: Note delete ho gaya.
+misc.notes.not_found: Koi note nahi mila is name se.
+
+misc.filters.added: Filter add ho gaya: %s
+misc.filters.removed: Filter remove ho gaya: %s
+misc.filters.no_filters: Koi filters set nahi hain.
+
+misc.quotes.random: Random quote: "%s"
+misc.stickers.added: Sticker save ho gaya is chat ke liye.
+misc.stickers.removed: Sticker remove ho gaya.
+misc.stickers.no_stickers: Is chat me koi stickers save nahi hain.
+
+misc.help_msg: |
+  *Misc Module* me random useful cheeze hain (notes, filters, quotes, stickers).
+
+  *User Commands:*
+  × /get `<note name>`: Saved note dekho.
+  × /quotes: Random quote dekho.
+
+  *Admin Commands:*
+  × /save `<note name>` `<content>`: Note save karo.
+  × /clear `<note name>`: Note delete karo.
+  × /addfilter `<word>` `<reply>`: Filter add karo.
+  × /stop `<word>`: Filter remove karo.
+  × /addsticker: Sticker save karo.
+  × /removesticker: Sticker remove karo.
+purges.purge.start: Purge start ho raha hai... Purane messages delete kiye ja rahe hain!
+purges.purge.complete: Purge complete ho gaya. %d messages delete hue.
+purges.del.delete: Message delete ho gaya.
+purges.del.fail: Message delete nahi ho paya.
+
+reports.reported: Admins ko report bhej di gayi.
+reports.report_admin: User %s ne report kiya: %s
+reports.report_disabled: Reports is chat me disabled hain.
+reports.report_enabled: Reports is chat me enabled hain.
+reports.toggle.on: Reports ab <b>enabled</b> ho gayi hain.
+reports.toggle.off: Reports ab <b>disabled</b> ho gayi hain.
+
+reports.help_msg: |
+  *Reports Module* admins ko specific messages ki complaints receive karne me help karta hai.
+
+  *User Commands:*
+  × Reply karke /report likho ya @admin likho kisi message pe report bhejne ke liye.
+
+  *Admin Commands:*
+  × /reports `<on/off>`: Chat me reports enable ya disable karo.
+warns.warn.user_warned: "%s ko warn kiya gaya! (%d/%d warnings)"
+warns.warn.reached_limit: "%s ne warn limit cross kar li (%d/%d)! Action: %s"
+warns.warn.reason: "<b>Reason:</b> %s"
+warns.warn.user_already_warned: "%s already warned hai."
+warns.warn.reset: "%s ki warnings reset ho gayi."
+warns.warn.list: "%s ki warnings:\n%s"
+warns.warn.no_warnings: "%s ke paas koi warnings nahi hain."
+
+warns.set_warn_limit.success: Warn limit %d pe set ho gayi.
+warns.set_warn_limit.invalid: Valid warn limit do (2 se 20 ke beech).
+
+warns.help_msg: |
+  *Warn Module* users ko discipline me rakhne ke liye use hota hai.
+
+  *Admin Commands:*
+  × /warn `<user>`: User ko warn karta hai.
+  × /dwarn `<user>`: User ko warn karta hai aur uska message delete karta hai.
+  × /resetwarns `<user>`: User ki warnings reset karta hai.
+  × /warns `<user>`: User ki warnings check karta hai.
+  × /setwarnlimit `<number>`: Warn limit set karta hai (default: 3).
+greetings.welcome.enabled: Welcome messages <b>enabled</b> ho gaye is chat me.
+greetings.welcome.disabled: Welcome messages <b>disabled</b> ho gaye is chat me.
+greetings.goodbye.enabled: Goodbye messages <b>enabled</b> ho gaye is chat me.
+greetings.goodbye.disabled: Goodbye messages <b>disabled</b> ho gaye is chat me.
+
+greetings.welcome.new_member: Swagat hai %s! Chat enjoy karo 😊
+greetings.goodbye.left_member: Alvida %s! Tumhari kami mehsoos hogi.
+
+greetings.set_welcome.success: Naya welcome message set ho gaya.
+greetings.set_goodbye.success: Naya goodbye message set ho gaya.
+greetings.reset_welcome.success: Welcome message reset ho gaya.
+greetings.reset_goodbye.success: Goodbye message reset ho gaya.
+
+greetings.help_msg: |
+  *Greetings Module* new members ko welcome aur leaving members ko goodbye bolta hai.
+
+  *Admin Commands:*
+  × /setwelcome `<message>`: Custom welcome message set karo.
+  × /setgoodbye `<message>`: Custom goodbye message set karo.
+  × /resetwelcome: Default welcome message wapas lagao.
+  × /resetgoodbye: Default goodbye message wapas lagao.
+  × /welcome `<on/off>`: Welcome messages enable ya disable karo.
+  × /goodbye `<on/off>`: Goodbye messages enable ya disable karo.
+chatinfo.info.chat_id: "Chat ID: <code>%s</code>"
+chatinfo.info.title: "Chat Title: %s"
+chatinfo.info.type: "Chat Type: %s"
+chatinfo.info.members: "Members: %d"
+chatinfo.info.admins: "Admins: %d"
+chatinfo.info.banned: "Banned Users: %d"
+chatinfo.info.description: "Description: %s"
+chatinfo.info.invite_link: "Invite Link: %s"
+
+chatinfo.promote.info: Tumhe promote kiya gaya as admin %s!
+chatinfo.demote.info: Tumhe demote kar diya gaya as normal user.
+commonstrings.start.hello: Hello %s! Main ready hoon help karne ke liye.
+commonstrings.start.description: Main ek powerful group management bot hoon jo tumhare chat ko secure aur organize rakhta hai.
+
+commonstrings.errors.not_admin: Tum admin nahi ho, ye action tum nahi kar sakte.
+commonstrings.errors.not_owner: Sirf chat creator ye action kar sakta hai.
+commonstrings.errors.user_not_found: User nahi mila.
+commonstrings.errors.invalid_args: Galat arguments diye gaye.
+commonstrings.errors.no_permission: Tumhare paas is action ki permission nahi hai.
+commonstrings.errors.something_wrong: Kuch galat ho gaya, dubara try karo.
+
+commonstrings.actions.done: Kaam ho gaya ✅
+commonstrings.actions.cancelled: Action cancel kar diya gaya ❌
+commonstrings.actions.processing: Kaam ho raha hai... thoda wait karo.
