@@ -2,6 +2,10 @@ main:
   lang_sample: India Hinglish
   language_flag: IND
   language_name: Hinglish
+  language_description: >
+    Hinglish is a hybrid language that blends Hindi and English, commonly spoken across urban India.
+    It combines Hindi vocabulary and grammar with English words and phrases, often switching between the two in a single sentence.
+    Hinglish is widely used in informal communication, advertising, pop culture, and social media.
 strings:
 commonstrings.admin_cache.cache_reloaded: Admin cache successfully reload ho gaya.
 commonstrings.admin_cache.not_found: 
