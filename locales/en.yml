@@ -2,6 +2,10 @@ main:
   lang_sample: US English
   language_flag: 🇺🇸
   language_name: English
+  language_description: >
+    English (US) is a West Germanic language and the de facto national language of the United States.
+    It is used in government, business, education, and daily communication across the country.
+    US English follows American spelling, vocabulary, and grammar conventions, and is one of the most widely used varieties of English globally.
 strings:
   commonstrings.admin_cache.cache_reloaded: Successfully reloaded admin cache.
   commonstrings.admin_cache.not_found:
